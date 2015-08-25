@@ -1,0 +1,33 @@
+{
+  "name": "adafruit-io-tunnel",
+  "version": "1.0.0",
+  "description": "A TLS/SSL tunnel to io.adafruit.com for insecure MQTT and HTTP clients",
+  "main": "index.js",
+  "bin": "./cli",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adafruit/adafruit-io-tunnel.git"
+  },
+  "keywords": [
+    "adafruit",
+    "io",
+    "tls",
+    "tunnel",
+    "raspberry",
+    "pi"
+  ],
+  "author": "Todd Treece <todd@uniontownlabs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adafruit/adafruit-io-tunnel/issues"
+  },
+  "homepage": "https://github.com/adafruit/adafruit-io-tunnel#readme",
+  "dependencies": {
+    "commander": "^2.8.1",
+    "http-proxy": "^1.11.1",
+    "tcp-proxy": "0.0.1"
+  }
+}
