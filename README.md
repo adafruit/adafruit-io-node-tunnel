@@ -15,16 +15,20 @@ v0.12.6
 ```
 
 Make sure the global `node_modules` folder on your Raspberry Pi is writable by the `pi` user.
+
+```console
 pi@tunnel ~ $ sudo chown -R pi /usr/local
 ```
 
 Install `forever`, `forever-service`, and `adafruit-io-tunnel` on your Raspberry Pi.
+
 ```console
 pi@tunnel ~ $ npm install -g forever forever-service adafruit-io-tunnel
 ```
 
 ## Starting the Service
 If everything has been installed, you can start the service by running the following command:
+
 ```console
 pi@tunnel ~ $ adafruit-io-tunnel start
                                  .`
