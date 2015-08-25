@@ -1,5 +1,5 @@
 # Adafruit IO TLS/SSL Tunnel
-A Node.js TLS/SSL tunnel for securely connecting HTTP and MQTT clients to io.adafruit.com.
+A Node.js TLS/SSL tunnel for securely connecting HTTP and MQTT clients to [io.adafruit.com][1].
 
 ## Connecting to a Headless Raspberry Pi
 If you would like to connect to a headless Raspberry Pi for setting up WiFi access, you can use the
