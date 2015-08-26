@@ -29,40 +29,38 @@ pi@tunnel ~ $ npm install -g forever forever-service adafruit-io-tunnel
 ## Starting the Service
 If everything has been installed, you can start the service by running the following command:
 
-```console
+```
 pi@tunnel ~ $ adafruit-io-tunnel start
-                                 .`
-                              -dMMs
-                             +MMMMMo
-                           .dMMMMMMN-
-                          +NMMMMMMMMd`
-                        `hMMMMMMMMMMMo
-                       -mMMMMMMMMMMMMN.
-                       dMMMMMMMMMMMMMMo
-  :hmmmmmmmmmmmmdhs/. `MMMMMMMMMMMMMMMh
-  sMMMMMMMMMMMMMMMMMMd+NMMMMMMMMMMMMMM+
-   /NMMMMMMMMMMMMMMMMMMMMMMMMs+NMMMMMm/+syyyso/-`
-    `hMMMMMMMMMMMMMMMMMMMMMMo  hMMMMMMMMMMMMMMMMMNhs+:.
-      /NMMMMMMMMMMMNmmNMMMMN. `mMMMMMMMMMMMMMMMMMMMMMMMNh-
-       .hMMMMMMMMMMh` `-sNMMs-hMMMMMMMMMMMMMMMMMMMMMMMMMM+
-         /mMMMMMMMMMNy+-./MMMMMMy:....oMMMMMMMMMMMMMMMNo.
-           :ymMMMMMMMMMMMMMMMMMNy//oymMMMMMMMMMMMMMNy:
-              .yMMMMMMMms:oMMNhNMMMMMMMMMMMMMMMMNh/`
-            .yMMMMMMMN/  .dMMy `sMMMMMMMMMMMNmy/`
-           /NMMMMMMMM:`-sMMMMM:  sMMMMMMs-..`
-          -NMMMMMMMMMNNMMMMMMMMs./MMMMMMMh`
-          mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMs
-         sMMMMMMMMMMMMMMMMhMMMMMMMMMMMMMMMN
-        :MMMMMMMMMMMMMMMN+ hMMMMMMMMMMMMMMN.
-       `dMMMMMMMMMMMMNh/`  `hMMMMMMMMMMMMMN.
-       /MMMMMMMMmhs+-        /dMMMMMMMMMMMN.
-       .hmdys/-                -sNMMMMMMMMN.
-                                 `:hNMMMMMN.
-                                    `+dMMMN`
-                                       ./+-
 
+                             `:-
+                            +NMMy
+                          `yMMMMM:
+                         :mMMMMMMm`
+                       `sMMMMMMMMMs
+                      `dMMMMMMMMMMM-
+                      hMMMMMMMMMMMMh
+   -syyyyyyyyyyso/:` .MMMMMMMMMMMMMN
+   yMMMMMMMMMMMMMMNmy:NMMMMMMMMMMMMd
+   `sNMMMMMMMMMMMMMMMNNMMMMo:mMMMMm//ossso/:.`
+     :mMMMMMMMMMMMMMMMMMMMy  yMMMMmNMMMMMMMMNmhs+:-`
+      `sMMMMMMMMMMmsydNMMM+ `mMMMMMMMMMMMMMMMMMMMMNmy
+        /mMMMMMMMMd:` ./dMd:hMNmdhhdMMMMMMMMMMMMMMMNy
+         .omMMMMMMMMdy+/yMMMMd-```.:mMMMMMMMMMMMNd+.
+           `:oymNMMMMMMmdNMMNNdhhdmMMMMMMMMMMMms-`
+             :ymNMMMMh:``dMd-+mMMMMMMMMMMMNmy:`
+           `yMMMMMMMo `:dMMN. .mMMMMdysso+-`
+          `dMMMMMMMMssdMMMMMd- +MMMMMm/
+          sMMMMMMMMMMMMMMMMMMNhdMMMMMMM:
+         -MMMMMMMMMMMMMMNyMMMMMMMMMMMMMd
+        `dMMMMMMMMMMMMMd-:MMMMMMMMMMMMMN
+        oMMMMMMMMMMNNy/   +NMMMMMMMMMMMN
+       .MMMMMMNmho/-`      -yNMMMMMMMMMN
+       `sdho/-`              .omMMMMMMMM
+                                -sNMMMMM
+                                  `/hMMh
+                                      `
 
-starting tunnel on ports 80 and 1883... 
+starting tunnel on ports 80 and 1883...
 ```
 
 ## Stopping the Service
