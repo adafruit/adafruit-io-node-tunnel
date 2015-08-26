@@ -1,13 +1,13 @@
-# Adafruit IO TLS/SSL Tunnel
+# Adafruit IO TLS/SSL Tunnel [![Build Status](https://travis-ci.org/adafruit/adafruit-io-tunnel.svg?branch=master)](https://travis-ci.org/adafruit/adafruit-io-tunnel)
 A Node.js TLS/SSL tunnel for securely connecting HTTP and MQTT clients to [io.adafruit.com][1].
 
-## Connecting to a Headless Raspberry Pi
-If you would like to connect to a headless Raspberry Pi for setting up WiFi access, you can use the
+## Installation
+This project was designed to run as a service on a Raspberry Pi. If you would like to connect
+to a headless Raspberry Pi for setting up WiFi access, you can use the
 [Adafruit Raspberry Pi Finder][4] app to find and connect to your Raspberry Pi.
 
-## Installation
-Make sure you have the latest stable version of Node.js installed on your Raspberry Pi. You can download
-it from the [node-arm][3] project.
+Once you have setup your Pi, make sure you have the latest stable version of
+Node.js installed on your Raspberry Pi. You can download it from the [node-arm][3] project if needed.
 
 ```console
 pi@tunnel ~ $ node -v
@@ -62,6 +62,17 @@ pi@tunnel ~ $ adafruit-io-tunnel start
 
 starting tunnel on ports 80 and 1883...
 ```
+
+## Using the Tunnel
+
+Instead of pointing your MQTT or HTTP client at io.adafruit.com, use the IP address
+or hostname of your Raspberry Pi.
+
+### HTTP
+Requests to port 80 on the Pi will be tunneled to HTTPS port 443 on io.adafruit.com.
+
+### MQTT
+Connections to port 1883 on the Pi will be tunneled to MQTTS port 8883 on io.adafruit.com.
 
 ## Stopping the Service
 
