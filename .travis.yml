@@ -3,8 +3,6 @@ node_js:
   - '0.12'
 install:
   - npm install -g gulp
-script:
-  - sudo gulp
 notifications:
   email:
     on_success: change

@@ -2,6 +2,9 @@ var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     mocha = require('gulp-mocha');
 
+process.env.TUNNEL_HTTP_PORT = 3000;
+process.env.TUNNEL_MQTT_PORT = 3001;
+
 gulp.task('lint', function() {
 
   var lint = jshint({

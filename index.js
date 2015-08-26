@@ -6,7 +6,7 @@ var http = tunnel({
   port: 443
 });
 
-http.listen(80);
+http.listen(process.env.TUNNEL_HTTP_PORT || 80);
 
 // proxy mqtt connections
 var mqtt = tunnel({
@@ -14,4 +14,4 @@ var mqtt = tunnel({
   port: 8883
 });
 
-mqtt.listen(1883);
+mqtt.listen(process.env.TUNNEL_MQTT_PORT || 1883);

@@ -8,7 +8,7 @@ describe('Tunnel', function() {
 
     it('should sucesssfully tunnel MQTT requests to AIO', function(done) {
 
-      var client = mqtt.connect('mqtt://localhost');
+      var client = mqtt.connect('mqtt://localhost:3001');
 
       client.on('connect', done);
       client.on('error', done);

@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "./cli",
   "scripts": {
-    "test": "sudo gulp test"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
