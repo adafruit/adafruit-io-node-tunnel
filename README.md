@@ -81,6 +81,18 @@ pi@tunnel ~ $ adafruit-io-tunnel stop
 stopping service...
 ```
 
+## Security Considerations
+
+The purpose of this service is to add an encryption layer, specifically TLS, to your adafruit IO messages in transit across the Internet. Not all IoT radio modules have a TLS stack and if you sent a message to adafruit.io with that device, it would be unencrypted at the application layer. For example, the message would be encrypted by the radio at the WiFi layer, but would be unencrypted at the Ethernet layer as it went from your router to the Internet.
+
+The danger of unencrypted application messages are two-fold. The first is that your message may be modified in transit but more importantly, your message can be read by any server that routes your traffic. It's like sending a postcard. If you made a adafruit.io connected garage door, then a lot of people (and machines) would know when the door opened and closed.
+
+Therefore, this service protects your data from prying eyes on the Internet.
+
+However, this service runs as an unauthenticated service on your network. This is by design so that your IoT device can make a connection to it. But it also means that anything on your network can talk to this service. Your adafruit.io credentials are *not* stored on this gateway service, but on your IoT device. So an attacker would still need to know your adafuit.io credentials to post to adafruit.io.
+
+Lastly, this service does not protect cellular modules. If you have something like a Adafruit FONA, then it makes an Internet connection directly through the cellular system and unless there is a TLS stack on the module, than most likely it's not end-to-end encrypted.
+
 ## License
 
 Copyright (c) 2015 Adafruit Industries. Licensed under the MIT license.
