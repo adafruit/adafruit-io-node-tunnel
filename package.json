@@ -1,6 +1,6 @@
 {
   "name": "adafruit-io-tunnel",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A TLS/SSL tunnel for securely connecting HTTP and MQTT clients to io.adafruit.com",
   "main": "index.js",
   "bin": "./cli",
