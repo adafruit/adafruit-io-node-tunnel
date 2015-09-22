@@ -1,4 +1,8 @@
-# Adafruit IO TLS/SSL Tunnel [![Build Status](https://travis-ci.org/adafruit/adafruit-io-tunnel.svg?branch=master)](https://travis-ci.org/adafruit/adafruit-io-tunnel)
+# THIS PACKAGE HAS BEEN MOVED
+The `adafruit-io` package now contains the latest Adafruit IO tunnel code. It can be found
+[on GitHub](https://github.com/adafruit/adafruit-io-node) and [on npm](https://www.npmjs.com/package/adafruit-io).
+
+## Adafruit IO TLS/SSL Tunnel 
 A Node.js TLS/SSL tunnel for securely connecting HTTP and MQTT clients to [io.adafruit.com][1].
 
 ## Installation
